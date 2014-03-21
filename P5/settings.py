@@ -53,7 +53,7 @@ ROOT_URLCONF = 'P5.urls'
 WSGI_APPLICATION = 'P5.wsgi.application'
 
 TEMPLATE_DIRS = (
-  '/home/borja/dsi/proyDjango/P5/static_pages/templates'
+  '/home/borja/dsi/proyDjango/P6/static_pages/templates'
 )
 
 # Database
@@ -65,6 +65,15 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+##########################################################################
+#NUEVO
+
+STATIC_ROOT = ''
+STATIC_URL = '/css/'
+STATICFILES_DIRS = ('/home/borja/dsi/proyDjango/P6/static_pages/css',)
+##########################################################################
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -83,4 +92,3 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_URL = '/static/'
